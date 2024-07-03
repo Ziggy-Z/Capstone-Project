@@ -69,3 +69,6 @@ Based on these findings, schools can implement targeted interventions to address
 
 ### Outline of project
 Detailed technical investigation can be found here: [Jupyter Notebook](https://github.com/Ziggy-Z/Capstone-Project/blob/main/Capstone_Project_20.1.ipynb)
+
+### Contact and Further Information
+Contact: [Linkedin](https://www.linkedin.com/in/zegedam-zegeye/)
