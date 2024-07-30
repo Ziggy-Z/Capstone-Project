@@ -2,7 +2,7 @@
 ### Author
 **Zegedam Zegeye**
 ### Executive Summary
-This project aims to evaluate various classification models to predict student academic performance and identify the key factors that contribute to student failure. By analyzing these factors, schools can implement targeted interventions to help improve student outcomes.
+This project aims to evaluate various classification models to predict student academic performance and identify the key factors contributing to student failure. By analyzing these factors, schools can implement targeted interventions to help improve student outcomes.
 
 ### Rationale
 Understanding the reasons behind student failure is critical for educators, policymakers, and stakeholders. Identifying key factors that influence student performance will enable educators to design targeted interventions that can support at-risk students and improve overall academic outcomes while also optimizing resource allocation by identifying students who need additional support early on.
@@ -11,11 +11,11 @@ Understanding the reasons behind student failure is critical for educators, poli
 What are the most significant factors contributing to student failure, and how can classification models be used to predict academic performance?
 
 ### Data Sources
-The dataset includes information collected through school reports and questionnaires, encompassing a wide range of features such as student grades, demographics, social factors, parental involvement, and school-related attributes. For this analysis, we'll be exploring Math grades as they are a standart learning material across the world. 
+The dataset includes information collected through school reports and questionnaires, encompassing a wide range of features such as student grades, demographics, social factors, parental involvement, and school-related attributes. For this analysis, we'll be exploring Math grades as they are a standard learning material across the world. 
 
 The link to the data source can be found here from Kaggle: https://www.kaggle.com/datasets/dillonmyrick/high-school-student-performance-and-demographics?resource=downloadLinks
 
-citation: P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
+citation: P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th Future Business Technology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
 
 ### Methodology
 * **Data Preprocessing:** Cleaning and preparing the data for analysis.
@@ -38,14 +38,17 @@ After evaluating four classification models—Logistic Regression, Support Vecto
 | Decision Tree             | 0.88          | 0.88       | 0.88         | 0.005                |
 | Support Vector Classifier | 0.88          | 0.88       | 0.88         | 0.006                |
 | K-Nearest Neighbors       | 0.87          | 0.86       | 0.87         | 0.009                |
+| Deep Neural Network       | -             | -          | 0.76         | 31.02                |
 
 __Logistic regression:__ Was the best model with an average train score of 0.973 and a test score of 0.929. Despite the longer fit time of 0.017 seconds, the good performance of the test represents a good balance between fitting the training data.
 
-__Decision Tree:__ Achieved a perfect train score of 1.000 but had an average lower test score of 0.88, indicating potential overfitting.It had the lowest average fit time of all models at 0.005 seconds.
+__Decision Tree:__ Achieved a perfect train score of 1.000 but had an average lower test score of 0.88, indicating potential overfitting. It had the lowest average fit time of all models at 0.005 seconds.
 
 __Support Vector Classifier (SVC):__ Obtained a perfect train score of 1.000 and also performed similarly on the test data with an average score of 0.88.  Its average fit time was the second lowest at 0.006 seconds.
 
 __K-Nearest Neighbors (KNN):__  Similarly achieved a perfect train score of 1.000 but had the lowest test score of 0.87, suggesting overfitting. Its average fit time was 0.009 seconds.
+
+__Deep Neural Network (DNN):__ When using Neural Network for a classification problem, It got a better score of 0.76 than our baseline classifier but not as good as our other models on both score and training time.
 
 The Logistic Regression model emerged as the best-performing model with a test score of 0.92. The key factors identified as contributing to student failure are:
 
