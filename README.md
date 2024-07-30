@@ -22,7 +22,7 @@ citation: P. Cortez and A. Silva. Using Data Mining to Predict Secondary School 
 
 * **Feature Selection:** Identifying the most relevant features that impact student performance.
 
-* **Model Evaluation:** Training and evaluating four classification models - Logistic Regression, Support Vector Classifier (SVC), K-Nearest Neighbors (KNN), and Decision Tree.
+* **Model Evaluation:** Training and evaluating four classification models - Logistic Regression, Support Vector Classifier (SVC), K-Nearest Neighbors (KNN), Decision Tree, and Deep Neural Network (DNN).
 
 * **GridSearchCV:** Optimizing hyperparameters to improve model performance.
 
